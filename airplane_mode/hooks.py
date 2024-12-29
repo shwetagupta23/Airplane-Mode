@@ -117,10 +117,11 @@ app_license = "mit"
 # override_doctype_class = {
 # 	"ToDo": "custom_app.overrides.CustomToDo"
 # }
-
-# Document Events
-# ---------------
-# Hook on document methods and events
+doc_events = {
+    "Airplane Ticket": {
+        "before_insert": "airplane_mode.airplane_mode.doctype.airplane_ticket.airplane_ticket.before_insert"
+    },
+}
 
 # doc_events = {
 # 	"*": {
